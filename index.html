@@ -571,10 +571,10 @@
                   class="user-email-input"
                   type="email"
                   name="email"
-                  id="user_email"
                   placeholder="E-mail"
+                  required
                 />
-                <label for="user_email"></label>
+
                 <button class="subscribe-button" type="submit">Подписаться</button>
               </div>
             </form>
@@ -585,6 +585,34 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <div>
+          <p class="header-modal">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="form-modal" action="">
+            <div class="form-field">
+              <label class="label-modal" for="name">Имя</label>
+              <input class="input-modal" type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label class="label-modal" for="tel">Телефон</label>
+              <input class="input-modal" type="tel" name="tel" id="tel" required />
+            </div>
+            <div class="form-field">
+              <label class="label-modal" for="mail">Почта</label>
+              <input class="input-modal" type="email" name="email" id="mail" required />
+            </div>
+            <div class="form-field">
+              <label class="label-modal" for="comment">Комментарий</label>
+              <textarea
+                class="comments-modal"
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <button class="btn-modal-send" type="submit">Отправить</button>
+          </form>
+        </div>
         <button class="button-modal" data-modal-close>
           <svg class="icon-modal-close" width="17" height="17">
             <use href="./images/sprite.svg#icon-close"></use>
