@@ -485,12 +485,19 @@ p {
   display: block;
   margin-left: 93px;
 }
+
 .subscribe-wrapper {
   display: flex;
   margin-top: 20px;
 }
 
 .subscribe-button {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+
   color: var(--main-white-color);
   font-family: inherit;
   font-weight: 700;
@@ -498,13 +505,20 @@ p {
   line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--main-blue-color);
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 136px;
+  
+  padding: 5px 16px;
+  min-width: 200px;
+  min-height: 50px;
   box-shadow: 0px 4px 4px var(--button-hero-shadow);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 12px;
+}
+
+.icon-send{
+  fill: var(--main-white-color);
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
 }
 
 .user-email-input {
@@ -524,14 +538,16 @@ p {
   padding-left: 16px;
 }
 .user-email-input::placeholder{
-    font-weight: 400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: var(--footer-mail-tel-color);
-    
+  letter-spacing: 0.03em;
+  color: var(--footer-mail-tel-color);
+   
 }
-
+.user-email-wrapper{
+  display: flex;
+}
 
 /*=============== Страница Портфолио ================ */
 
