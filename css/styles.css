@@ -213,8 +213,10 @@ p {
 
   display: inline-block;
   padding: 10px 32px;
-  min-width: 136px;
+  min-width: 200px;
+  max-height: 50px;
   box-shadow: 0px 4px 4px var(--button-hero-shadow);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -514,6 +516,7 @@ p {
   min-width: 200px;
   min-height: 50px;
   box-shadow: 0px 4px 4px var(--button-hero-shadow);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -725,7 +728,18 @@ p {
 }
 .icon-modal-close {
   margin: auto auto;
+
+  transition: fill 250ms var(--timing-function);
 }
+
+.icon-modal-close:hover{
+  fill: var(--main-blue-color);
+}
+
+.button-modal:focus .icon-modal-close{
+  fill: var(--main-blue-color);
+}
+
 .header-modal{
   font-weight: 700;
   font-size: 20px;
@@ -747,8 +761,10 @@ p {
   background-color: var(--main-blue-color);
   display: block;
   padding: 10px 32px;
-  min-width: 136px;
+  min-width: 200px;
+  min-height: 50px;
   box-shadow: 0px 4px 4px var(--button-hero-shadow);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
@@ -838,6 +854,7 @@ align-items: center;
   border: 1px solid var(--header-color);
   cursor: pointer;
   margin-right: 8px;
+  margin-left: 12px;
 }
 .checkbox-input:checked + .checkbox-lable::before{
   border: none;
